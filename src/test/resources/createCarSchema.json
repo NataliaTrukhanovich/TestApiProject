@@ -1,0 +1,27 @@
+{
+  "type": "object",
+  "required": [
+    "engineType",
+    "id",
+    "mark",
+    "model",
+    "price"
+  ],
+  "properties": {
+    "engineType": {
+      "type": "string"
+    },
+    "id": {
+      "type": "integer"
+    },
+    "mark": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    },
+    "price": {
+      "type": "number"
+    }
+  }
+}

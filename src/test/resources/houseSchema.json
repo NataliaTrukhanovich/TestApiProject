@@ -1,0 +1,46 @@
+{
+  "type": "object",
+  "required": [
+    "floorCount",
+    "id",
+    "parkingPlaces",
+    "price"
+  ],
+  "properties": {
+    "floorCount": {
+      "type": "integer"
+    },
+    "id": {
+      "type": "integer"
+    },
+    "parkingPlaces": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "isCovered",
+          "isWarm",
+          "placesCount"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "isCovered": {
+            "type": "boolean"
+          },
+          "isWarm": {
+            "type": "boolean"
+          },
+          "placesCount": {
+            "type": "integer"
+          }
+        }
+      },
+      "price": {
+        "type": "numeric"
+      }
+    }
+  }
+}

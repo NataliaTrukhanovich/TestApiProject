@@ -1,0 +1,31 @@
+{
+  "type": "object",
+  "required": [
+    "age",
+    "firstName",
+    "id",
+    "money",
+    "secondName",
+    "sex"
+  ],
+  "properties": {
+    "age": {
+      "type": "integer"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "id": {
+      "type": "integer"
+    },
+    "money": {
+      "type": "number"
+    },
+    "secondName": {
+      "type": "string"
+    },
+    "sex": {
+      "type": "string"
+    }
+  }
+}

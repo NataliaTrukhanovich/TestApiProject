@@ -1,0 +1,81 @@
+{
+  "type": "object",
+  "required": [
+    "id",
+    "floorCount",
+    "price",
+    "parkingPlaces",
+    "lodgers"
+  ],
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "floorCount": {
+      "type": "integer"
+    },
+    "price": {
+      "type": "number"
+    },
+    "parkingPlaces": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "isWarm",
+          "isCovered",
+          "placesCount"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "isWarm": {
+            "type": "boolean"
+          },
+          "isCovered": {
+            "type": "boolean"
+          },
+          "placesCount": {
+            "type": "integer"
+          }
+        }
+      },
+      "lodgers": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "id",
+            "firstName",
+            "secondName",
+            "age",
+            "sex",
+            "money"
+          ],
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "firstName": {
+              "type": "string"
+            },
+            "secondName": {
+              "type": "string"
+            },
+            "age": {
+              "type": "integer"
+            },
+            "sex": {
+              "type": "string"
+            },
+            "money": {
+              "type": "number"
+            }
+          }
+        }
+      }
+    }
+  }
+}
